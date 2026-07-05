@@ -4,7 +4,7 @@
 An airline/aircraft insurer client wants to know which aircraft makes and models show low rates of total destruction and low likelihood of fatal/serious passenger injury in an accident, along with general risk factors at play. Recommendations are split separately for small vs. large aircraft.
  
 ## Data
-NTSB aviation accident data, 1948–2023 (`AviationData.csv`). Filtered to:
+NTSB aviation accident data, 1948–2023 (`OriginalAviationData.csv`). Filtered to:
 - Accidents from **1983 onward** (40-year assumed aircraft lifetime)
 - **Professional builds only** (Amateur.Built == No)
 - **Accidents only** (excludes Incidents, which are non-substantial by definition)
@@ -14,7 +14,7 @@ Cleaned dataset saved as `CleanedAviationData.csv`.
 ## Repo Structure
 - `Aviation_Accidents_Cleaning.ipynb` — data loading, filtering, cleaning, feature construction
 - `Aviation_Accidents_Data_Analysis.ipynb` — EDA, safety comparisons, recommendations
-- `AviationData.csv` — raw data
+- `OriginalAviationData.csv` — raw data
 - `CleanedAviationData.csv` — cleaned data used for analysis
 ## Key Derived Metrics
 - **Destroyed** — binary flag, 1 if Aircraft.damage == "Destroyed"
