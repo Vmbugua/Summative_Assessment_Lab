@@ -17,8 +17,8 @@ Cleaned dataset saved as `CleanedAviationData.csv`.
 - `OriginalAviationData.csv` — raw data
 - `CleanedAviationData.csv` — cleaned data used for analysis
 ## Key Derived Metrics
-- **Destroyed** — binary flag, 1 if Aircraft.damage == "Destroyed"
-- **Fatal_Serious_Rate** — (fatal + serious injuries) / total occupants per accident
+- **Destroyed.Aircrafts** — binary flag, 1 if Aircraft.damage == "Destroyed"
+- **Fatal.Serious.Rate** — (fatal + serious injuries) / total occupants per accident
 - **Make_Model** — combined identifier since model names repeat across makes
 - Aircraft split into **small vs. large** using a 20-passenger threshold (based on average passengers per Make_Model)
 - All group comparisons required a minimum sample size (small: n≥30, large: n≥10) to ensure statistically reliable results
